@@ -7,9 +7,10 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "jest" : "jest --env=jsdom --verbose"
+    "jest": "jest --env=jsdom --verbose"
   },
   "dependencies": {
+    "@heroicons/react": "^2.0.16",
     "@testing-library/user-event": "^14.4.3",
     "@types/node": "18.14.6",
     "@types/react": "18.0.28",
