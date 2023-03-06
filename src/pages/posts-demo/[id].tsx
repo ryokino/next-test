@@ -10,9 +10,11 @@ const PostDemoDetail = (props: PROPS) => {
   const { postId, post } = props
   return (
     <>
-      <h1>ブログ</h1>
-      <h2>ID: {postId}</h2>
-      <h3>{post}</h3>
+      <div className="text-5xl font-bold mb-10 text-center mt-20">ブログ</div>
+      <div className="text-2xl font-bold mb-5 text-center mt-10">
+        ID: {postId}
+      </div>
+      <div className="text-xl font-bold mb-5 text-center mt-10">{post}</div>
     </>
   )
 }
