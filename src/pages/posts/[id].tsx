@@ -20,7 +20,7 @@ const PostDetail = (props: POST) => {
       <Link href="/blog-page">
         <div className="flex cursor-pointer mt-12">
           <ChevronDoubleLeftIcon className="h-6 w-6 mr-3" />
-          <a data-testId="back-blog">Back to blog-page</a>
+          <div data-testId="back-blog">Back to blog-page</div>
         </div>
       </Link>
     </Layout>
@@ -39,7 +39,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
   const paths = await getAllPostIds()
   return {
     paths,
-    fallback: false,
+    fallback: true,
   }
 }
 
